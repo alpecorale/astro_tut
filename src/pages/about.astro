@@ -4,10 +4,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "About Me";
 
 const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Technical Writer",
-  hobbies: ["photography", "birdwatching", "baseball"],
+  firstName: "Aidan",
+  state: "Massachussets",
+  occupation: "Creative Freelancer?",
+  interests: ["climbing", "travel", "video games", "journalism", "art", "tinkering", "video editing"],
 };
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
@@ -23,28 +23,32 @@ const textCase = "uppercase"
 ---
 <BaseLayout pageTitle={pageTitle}>
     <div>
-        <h2>... and my new Astro site!</h2>
+        <h2>... and my work!</h2>
 
-        <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+        <p>My name is Aidan and I created this website to show off my work and hobbies. 
+        My goal is to work on projects that are interesting to me while sharing and documenting some of the procedure behind the work.
+        Right now projects will focus on software and web development, but may expand to creating art, journalism, video production or building stuff in the future.</p>
 
-        <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
-        <p>Here are a few facts about me:</p>
+        <p>This site will update as I learn more, so keep checking back and see how my journey is going!</p>
+        
+        <h3>Education and Work Experience:</h3>
         <ul>
-            <li>My name is {identity.firstName}.</li>
-            <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-            {identity.hobbies.length >= 2 &&
-                <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-            }
+          <li><b>Worcester Polytechnic Institute </b><br> 
+          &emsp; Bachelors in Bioinformatics & Computational Biology <br>
+          &emsp; Bachelors in Computer Science </li>
+
+          <li>
+          <b>Homology Medicines</b> <span>(June 2022 - June 2023)</span><br>
+          &emsp; Bioinformatics Research Associate <br>
+          &emsp;
+          </li>
         </ul>
-        <p>My skills are:</p>
+        
+        <p>Here are a few of my interests:</p>
         <ul>
-        {skills.map((skill) => <li class="skill">{skill}</li>)}
+          {identity.interests.map((interest) => <li class="interest">{interest}</li>)}
         </ul>
 
-        {happy && <p>I am happy to be learning Astro!</p>}
-
-        {finished && <p>I finished this tutorial!</p>}
-
-        {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+        
   </div>
 </BaseLayout>

@@ -1,0 +1,12 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Collage from '../components/Collage';
+const pageTitle = "Collage";
+const allCollages = await getCollection("collages");
+
+---
+<BaseLayout pageTitle={pageTitle}>
+  <p>I wanted a place less formal than a blog to share some things that I like. What better way to do that than a collage.</p>
+  <Collage client:load collages={allCollages} />
+</BaseLayout>

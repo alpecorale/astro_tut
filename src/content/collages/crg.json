@@ -1,0 +1,12 @@
+{
+    "title": "Central Rock Gym",
+    "pubDate": "2024-02-06",
+    "description": "Hobby",
+    "link": "https://centralrockgym.com/",
+    "image": {
+        "url": "/collage_imgs/crg.png",
+        "alt": "GRG logo."
+    },
+    "src":"/collage_imgs/crg.png",
+    "tags": ["hobby"]
+}

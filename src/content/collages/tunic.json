@@ -1,0 +1,12 @@
+{
+    "title": "TUNIC",
+    "pubDate": "2024-02-06",
+    "description": "Video game",
+    "link": "https://tunicgame.com/",
+    "image": {
+        "url": "../collage_imgs/tunic.jpg",
+        "alt": "Tunic logo."
+    },
+    "src":"/collage_imgs/tunic.jpg",
+    "tags": ["video_game"]
+}
