@@ -4,9 +4,9 @@
     "description": "Video game",
     "link": "https://tunicgame.com/",
     "image": {
-        "url": "../collage_imgs/tunic.jpg",
+        "url": "../collage_imgs/tunic.png",
         "alt": "Tunic logo."
     },
-    "src":"/collage_imgs/tunic.jpg",
+    "src":"/collage_imgs/tunic.png",
     "tags": ["video_game"]
 }
