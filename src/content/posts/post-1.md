@@ -2,7 +2,7 @@
 title: 'A Place on the Web'
 pubDate: 2024-02-05
 description: 'Building this website.'
-author: 'Astro Learner'
+author: 'Aidan P'
 image:
     url: 'https://docs.astro.build/assets/full-logo-light.png'
     alt: 'The full Astro logo.'

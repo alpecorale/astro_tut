@@ -1,16 +1,52 @@
 ---
-const { url, title } = Astro.props;
+const { url, title, image } = Astro.props;
 ---
 <style>
-a {
+    .blog-card {
   display: block;
-  padding: 10px 0;
-  color: purple;
-  decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  width: 60%;
+  max-width: 300px;
+  margin: 20px auto; /* Center the card horizontally and add some space around it */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #ccc; /* Add a border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a drop shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+
+  /* Define the dimensions of the image */
+  position: relative;
+  overflow: hidden;
+  text-decoration: none !important;
+}
+
+.blog-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.blog-card img {
+  width: 100%;
+  height: calc(100% * (2/3)); /* Set image height to 2/3 of the card height */
+  object-fit: cover; /* Ensure the image covers the entire area */
+  border-top-left-radius: 10px; /* Rounded top corners for the image */
+  border-top-right-radius: 10px; /* Rounded top corners for the image */
+}
+
+.blog-card p {
+  background-color: #fff; /* White background for text */
+  padding: 10px; /* Add padding for text */
+  margin: 0; /* Remove default margin */
+  border-bottom-left-radius: 10px; /* Rounded bottom corners for text */
+  border-bottom-right-radius: 10px; /* Rounded bottom corners for text */
+
+  /* Text styling */
+  font-family: "Lucida Console", monospace; /* Use Lucida Console font */
+  font-weight: bold; /* Bold font weight */
+  color: black !important; /* Set font color to black */
+  text-decoration: none !important; /* Remove underline */
 }
 </style>
 
-<li><a href={url}>{title}</a></li>
+<a class="blog-card" href={url}>
+    <img src={image.url} width="300" alt={image.alt} />
+    <p>{title}</p>
+</a>
+
