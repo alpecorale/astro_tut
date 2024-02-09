@@ -17,7 +17,7 @@ const postsCollection = defineCollection({
 });
 
 const collageCollection = defineCollection({
-    type: 'content',
+    type: 'data',
     schema: z.object({
         title: z.string(),
         pubDate: z.string(),
@@ -30,9 +30,27 @@ const collageCollection = defineCollection({
         src: z.string(),
         tags: z.array(z.string())
     })
-})
+});
+
+const projectsCollection = defineCollection({
+  type: 'data',
+  schema: z.object({
+    title: z.string(),
+    pageName: z.string(),
+    pubDate: z.string(),
+    description: z.string(),
+    author: z.string(),
+    image: z.object({
+      url: z.string(),
+      alt: z.string()
+    }),
+    tags: z.array(z.string())
+  })
+});
+
 // Export a single `collections` object to register your collection(s)
 export const collections = {
   posts: postsCollection,
-  collages: collageCollection
+  collages: collageCollection,
+  projects: projectsCollection
 };

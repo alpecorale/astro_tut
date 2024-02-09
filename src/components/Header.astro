@@ -3,10 +3,14 @@ import Hamburger from './Hamburger.astro';
 import Navigation from './Navigation.astro';
 import ThemeIcon from './ThemeIcon.astro';
 ---
-<header>
-  <nav>
+<header class="w-full py-2 px-6 bg-misty_rose flex justify-between items-center">
+  <div> <!-- Container for Hamburger -->
     <Hamburger />
-    <ThemeIcon />
+  </div>
+  <nav class="mx-auto"> <!-- Center the navigation bar -->
     <Navigation />
   </nav>
+  <div> <!-- Container for ThemeIcon -->
+    <ThemeIcon />
+  </div>
 </header>

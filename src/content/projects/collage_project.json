@@ -1,0 +1,13 @@
+{
+    "title": "Collage",
+    "pageName": "collageProj",
+    "pubDate": "2024-02-08",
+    "description": "Collage board of interests, hobbies, media and influences.",
+    "author": "Aidan P",
+    "image": {
+        "url": "https://docs.astro.build/default-og-image.png",
+        "alt": "Example Collage Board."
+    },
+    "tags": ["art", "personal"]
+}
+

@@ -1,12 +1,65 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Collage from '../components/Collage';
-const pageTitle = "Collage";
-const allCollages = await getCollection("collages");
-
+import BlogPost from '../components/BlogPost.astro';
+const allProjects = await getCollection("projects");
+console.log(allProjects)
+const tags = [...new Set(allProjects.map((projectIN:any) => projectIN.data.tags).flat())];
+const pageTitle = "Projects"
 ---
+<style>
+.container {
+  display: flex; /* Use flexbox layout */
+}
+
+
+.options {
+  width: 66.66%; 
+}
+
+
+.tagsdiv {
+    display: block;
+    flex-wrap: wrap;
+    width: 33.33%;
+    height: 25px;
+  }
+
+  .tag {
+    margin: 0.25em;
+    border: dotted 1px #a1a1a1;
+    border-radius: .5em;
+    padding: .5em 1em;
+    font-size: 1.15em;
+    background-color: #F8FCFD;
+  }
+  h4 {
+    width: 100%;
+  }
+
+  .tag a:hover {
+  background-color: #e0e0e0; /* Darken background color on hover */
+}
+</style>
 <BaseLayout pageTitle={pageTitle}>
-  <p>I wanted a place less formal than a blog to share some things that I like. What better way to do that then make a collage.</p>
-  <Collage client:load collages={allCollages} />
+  <div>
+
+
+    <p>This is where I will post about my journey learning Astro.</p>
+    <div class="container">
+        <div class="options">
+            <ul>
+                {allProjects.map((post:any) => <BlogPost url={`/projects/${post.data.pageName}`} title={post.data.title} image={post.data.image}/>)}
+
+            </ul>
+        </div>
+        <div class="tagsdiv">
+            <h4>Sort by Tags: </h4>
+            {tags.map((tag) => (
+                <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+            ))}
+        </div>
+    </div>
+
+  </div>
 </BaseLayout>

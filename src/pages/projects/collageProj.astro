@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from "astro:content";
+import Collage from '../../components/Collage';
+const allCollages = await getCollection("collages");
+const collageTags = []
+---
+<BaseLayout pageTitle="Collage">
+    <div>
+        <p>
+            This is a collage project I am working on to share some of my interests and 
+            experiment with using web design for art. <br >
+            My inspiration these sticker collages is street posts, graffiti and peers 
+            laptops and water bottles. 
+            I am often too anxious to put stickers on things I own in some futile attempt 
+            to save all my stickers for the perfect place or thing. But all I really 
+            want to do is show them off. So with this digital sticker collection I have
+            attempted to finailly share them. This generative art peice randomly places
+            stickers on a ever expanding canvas for you to explore my interests. Take a
+            look at the gallery, generate your own pieces and filter by subjects. 
+        </p>
+        <Collage client:load collages={allCollages} tags={collageTags} />
+
+    </div>
+</BaseLayout>
+
+<!-- ---
+import { getCollection } from "astro:content";
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Collage from '../components/Collage';
+const pageTitle = "Collage";
+const allCollages = await getCollection("collages");
+
+---
+<BaseLayout pageTitle={pageTitle}>
+  <p>I wanted a place less formal than a blog to share some things that I like. What better way to do that then make a collage.</p>
+  <Collage client:load collages={allCollages} />
+</BaseLayout> -->
