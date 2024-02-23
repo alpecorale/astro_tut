@@ -13,7 +13,10 @@ export default function Greeting({messages}) {
 
   return (
     <div>
-      <h3 >{greeting}! Thank you for visiting!</h3>
+      {/* <h3 >{greeting}! Thank you for visiting!</h3> */}
+      <h3>{greeting} 👋— I maintain this website occasionally in order to provide a better context of 
+      who I am as a professional & as a person. I also use this site as a corner of the web to personalize 
+      & call my own! Hope you enjoy your stay.</h3> 
       {/* <button onClick={() => setGreeting(randomMessage())}>
         New Greeting
       </button> */}

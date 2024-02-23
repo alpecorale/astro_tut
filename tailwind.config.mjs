@@ -2,7 +2,20 @@
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    colors: {
+	fontFamily: {
+		'sans': ['Montserrat Alternates', 'sans-serif'],
+		'display': ['Workbench', 'sans-serif'],
+		'display2': ['Yatra One', 'sans-serif'],
+		'nav': ["Lexend", "sans-serif"],
+		'name': ["Tauri", "sans-serif"]
+	  },
+    colors2: { 
+			"gray": { DEFAULT: '#59656f', 100: '#121416', 200: '#23282c', 300: '#353c42', 400: '#475058', 500: '#59656f', 600: '#758490', 700: '#97a3ac', 800: '#bac1c8', 900: '#dce0e3' },
+			"white": { DEFAULT: '#ffffff', 100: '#333333', 200: '#666666', 300: '#999999', 400: '#cccccc', 500: '#ffffff', 600: '#ffffff', 700: '#ffffff', 800: '#ffffff', 900: '#ffffff' },
+			"blue": { DEFAULT: '#4bb3fd', 100: '#012641', 200: '#014c81', 300: '#0272c2', 400: '#0997fd', 500: '#4bb3fd', 600: '#6ec2fe', 700: '#92d1fe', 800: '#b6e0fe', 900: '#dbf0ff' },
+			"red": { DEFAULT: '#d33f49', 100: '#2d0a0d', 200: '#5a1419', 300: '#871f26', 400: '#b42932', 500: '#d33f49', 600: '#dc666e', 700: '#e58c92', 800: '#eeb3b6', 900: '#f6d9db' } 
+	},
+	colors: {
       saffron: {
         DEFAULT: "#eec643",
         100: "#382c05",
@@ -62,7 +75,7 @@ export default {
         700: "#98c7ae",
         800: "#badac9",
         900: "#ddece4",
-      },
+      }
     },
     extend: {},
   },

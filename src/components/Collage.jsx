@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'preact/hooks';
 import Collage_Info from './Collage_Info';
 import * as d3 from 'd3';
 
-function CollageForceSimulation({ collages }) {
+function CollageForceSimulation({ collages, tags }) {
   const svgRef = useRef();
 
   useEffect(() => {

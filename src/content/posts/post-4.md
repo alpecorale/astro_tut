@@ -1,11 +1,25 @@
 ---
-title: My Fourth Blog Post
-author: Astro Learner
-description: "This post will show up on its own!"
+title: 'Building a brand'
+pubDate: 2024-02-05
+description: 'Building a braND.'
+author: 'Aidan P'
 image:
-    url: "https://docs.astro.build/default-og-image.png"
-    alt: "The word astro against an illustration of planets and stars."
-pubDate: 2022-08-08
-tags: ["astro", "successes"]
+    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    alt: 'The full Astro logo.'
+tags: ["project"]
 ---
-This post should show up with my other blog posts, because `Astro.glob()` is returning a list of all my posts in order to create my list.
+
+Welcome to my _new blog_ about creating stuff. Here, I will share my learning journey as I build a brand
+
+## Background
+
+Website, art, projects
+
+## Plans
+
+1. **Basic Functionality**: Since it's been a while and I didn't want to build everything from scratch, it was a perfect time to try out Astro for webdevelopment. I was initially planning on trying to use React Library, but realized I did not need React's component based renedering for a project like this. Better yet after playing around with Astro I learned how easy it was to implement React into the site where needed so I can still experiment with it in the future.
+
+2. **Designing**: I intend to improve the design and feel of the website to reflect a professional and aestheticly appealing layout. This is a work in progress as design & CSS are not my forte, but we are learning.
+
+3. **Populatiting the Site**: Lastly the site needs to be populated with content. I have plans to make sections featuring other projects I am working on or have worked on in the past. Possibly a one day builds kind of thing. I also would like to work on some more artistic projects including writing, collage boards or other digital media. At this time I am unsure if blogs will continue, but I will likely try to write something once a week to keep me on track.
+

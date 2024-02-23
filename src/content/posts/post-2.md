@@ -1,11 +1,28 @@
 ---
-title: My Second Blog Post
-author: Astro Learner
-description: "After learning some Astro, I couldn't stop!"
+title: Collage Art Project
+author: AIdan Pecorale
+description: "Wanted to make a virtual sticker collage for things I enjoy."
 image:
     url: "https://docs.astro.build/assets/arc.webp"
-    alt: "Thumbnail of Astro arcs."
-pubDate: 2022-07-08
-tags: ["astro", "blogging", "learning in public", "successes"]
+    alt: "Thumbnail collage project."
+pubDate: 2024-02-23
+tags: ["art", "project", "in-progress"]
 ---
-After a successful first week learning Astro, I decided to try some more. I wrote and imported a small component from memory!
+Part of picking this as the first project after the website,<!-- (starting it while I was still working on the site)--> had to do with picking something easy enough that I would actually be able to start, but challenging due to its vunerability and publicness. In my effort to create content that I enjoy and learn new hobbies I am trying to document my processes as I explore.<!--There is of course hopefully a monetary aspect of me doing this at some point in the future.--> The project will probably never be quite complete and the piece will grow over time. So visit now and visit later for hopefully each experience will be unique.
+
+<!--The motivation for making some art is based in the idea that I am tired of leaving projects in a half finised state. Often in the working world art and design are left for later. What I mean is most projects I work on never look perfect because I'd often run out of time when I came to perfecting the look of something before I was required to submit my work or had to work on something else. This project is a nod to that as I am sure it will never be quite complete. This description will change over time and the art piece will grow and shrink. Even the way you experience it will be unique. -->
+
+The inspiration for this project comes from two things, love of the art form and love for the technology. 
+
+First my love for stickered and graffitied surfaces I see walking cities or staying in hostels.
+ To me there is nothing more interesting than encountering a cross walk sign decorated with stickers promoting local artists, lost + found signs and sketchy qr codes. <!--extended version -> signs of local buisnesses, brand logos, art, ads for tutors or baby and pet sitters, local shows or performances, missing items, lost pets, missed connections, items for sale, apartment ads, current events or political messages. --> (In fact you might have found my site because of one.)  <!--If I ever have the courage/get around to making my own stickers.--> To me these sign posts are expressions of community and life. 
+ Sometimes I stop and gaze on them to admire all the effort people have put in to create inside jokes in a community and can make you feel like a part of it. Similar to walking through a temporary exhibit at museum you can feel like you are witnessing something temportary and special that many wont have the opportunity to ever see. Like a temporary mueseum that jumps from 6 month? residencies in the worlds top museums the art in our local galleries has the ability to spread to larger spheres of influence on the scale of national or global issues. Signs flooding polls after mass shootings, injustices, and political campaigns show how much of the country feels about hot button issues. <!-- extended version -> issues of police brutality, war in ukraine or the Isreal/Gaza issues (2022-2024), covid (2020-2024), Trump/Hillary/Biden (2016-2024) LGBTQA+ (2016-2024), reproductive rights (2018?-2024), pot legalization (?-2024), or climate change (?-2024) --> But posts are just as equally decorated with sign for local buisnesses, ads for shows and local artists, or community issues. <!-- extended version -> baby sitters, dog walkers, pet sitters, apartments, missed connections, items for sale, lost dogs, missing jewlery, and other inside jokes -->
+ This is how I decided I wanted to make my own, as a way to present to you a personal collage of what I enjoy and what I am paying attention to in my life. The goal is to create art that is some what chaotic and messy but shares my interests over time and could even be seen as a cultivation of my aesthetic that I am sharing with you. Nothing here is a paid sponsorship (though I wouldn't mind if any company wanted to send me free things). <!--When I add an image it is an endorsement of an interest. --> <!--I might add images of hobbies, books, movies/tv,  brand logos, video games, youtube channels, and art I have created or like. -->
+ <!--Below I have attached a gallary section to show off some pieces I have found in the wild.-->
+ <!--Also please feel free to send me submissions from your community to my X @______ -->
+
+The tech half.
+ <!--D3, Building a physics engine?-->
+ Part of picking this as the first project after the website,<!--(starting it while I was still working on the site)--> had to do with wanting to continue to do web development projects till I felt comfortable with it again. I planned to do the project using D3.js for the visualization with React which I hadn't used together before. As the project grew I saw more avenues to improve it and improve upon my vision. What started as me just planning to use pictures I found on the web led to me learning basic photoshop to convert them to remove backgrounds and convert them to svgs. Even now I have dreams of creating my own art and stickers <!--(maybe even modifying the aestechtic add wear or age like a real street post would have, ooh I get tingles thinking about it)--> to add or the possiblity of tweaking with the physics engine to overlap objects in a more human way<!-- (covering whitespaces or overlapping corners)-->.
+
+Now please enjoy my art :)

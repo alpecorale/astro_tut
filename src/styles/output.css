@@ -634,13 +634,13 @@ video {
 
 html {
   background-color: white;
-  color: theme('colors.true_blue.DEFAULT');
+  color: theme('colors2.red.DEFAULT');
   font-family: sans-serif;
 }
 
 header {
-  background-color: theme('colors.misty_rose.DEFAULT');
-  color: theme('colors.jungle_green.DEFAULT');
+  background-color: theme('colors2.gray.DEFAULT');
+  color: theme('colors2.white.DEFAULT');
   max-width: 100%;
 }
 
@@ -657,6 +657,7 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+  color: theme('colors2.blue.DEFAULT');
 }
 
 /* nav styles */
@@ -671,11 +672,11 @@ h1 {
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
-  background-color: theme('colors.saffron.DEFAULT');
+  background-color: theme('colors2.blue.DEFAULT');
 }
 
 .nav-links {
-  background-color: theme('colors.saffron.DEFAULT');
+  background-color: theme('colors2.white.DEFAULT');
   display: none;
   margin: 0;
 }
@@ -692,7 +693,7 @@ h1 {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: theme('colors.saffron.DEFAULT');
+  background-color: theme('colors2.gray.400');
 }
 
 .expanded {
@@ -719,7 +720,7 @@ h1 {
 }
 
 html.dark {
-  background-color: theme('colors.yinmn_blue.DEFAULT');
+  background-color: theme('colors2.blue.DEFAULT');
   color: theme('colors.misty_rose.DEFAULT');
 }
 

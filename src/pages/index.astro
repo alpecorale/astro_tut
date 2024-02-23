@@ -1,10 +1,50 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Greeting from '../components/Greeting';
-const pageTitle = "Welcome";
+const pageTitle = "Aidan Pecorale";
+
+const identity = {
+  firstName: "Aidan",
+  state: "Massachussets",
+  occupation: "Creative Freelancer?",
+  interests: ["climbing", "travel", "video games", "journalism", "art", "tinkering", "video editing"],
+};
 ---
-<BaseLayout pageTitle={pageTitle}>
+<br>
+<br>
+<BaseLayout class="text-lg font-semibold">
+
+  <h1 transition:animate="slide" class="font-display2 text-6xl">{pageTitle}</h1>
+  
   <Greeting client:load messages={["Hello", "Hej", "Hallo", "Hola", "Habari"]} />
-  <p>
-  This site is currently being built and updated frequently. Feel free to checkout the other tabs to learn more about its creator and what is being built.</p>
+  
+  <div >
+
+    <p>My name is Aidan and I created this website to show off my work and hobbies. 
+    My goal is to work on projects that are interesting to me while sharing and documenting some of the procedure behind the work.
+    Right now projects will focus on software and web development, but may expand to creating art, journalism, video production or building stuff in the future.</p>
+
+    <p>This site will update as I learn more, so keep checking back and see how my journey is going!</p>
+    
+    <h3>Education and Work Experience:</h3>
+    <ul>
+      <li><b>Worcester Polytechnic Institute </b><br> 
+      &emsp; Bachelors in Bioinformatics & Computational Biology <br>
+      &emsp; Bachelors in Computer Science </li>
+
+      <li>
+      <b>Homology Medicines</b> <span>(June 2022 - June 2023)</span><br>
+      &emsp; Bioinformatics Research Associate <br>
+      &emsp;
+      </li>
+    </ul>
+    
+    <p>Here are a few of my interests:</p>
+    <ul>
+      {identity.interests.map((interest) => <li class="interest">{interest}</li>)}
+    </ul>
+
+    
+</div>
+  
 </BaseLayout>

@@ -4,6 +4,8 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/output.css';
 const { pageTitle } = Astro.props;
+
+
 ---
 <html lang="en">
   <head>
@@ -13,12 +15,17 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
     <ViewTransitions />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Workbench&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
   </head>
-  <body class="flex flex-col min-h-screen">
-    <Header />
+  <body class="font-sans flex flex-col min-h-screen">
+    <!-- <Header /> -->
     
     <div class="mx-8 my-4 main flex-grow">
-      <h1 transition:animate="slide">{pageTitle}</h1>
+      <h1 transition:animate="slide" class="font-display">{pageTitle}</h1>
       <slot  />
     </div>
     
